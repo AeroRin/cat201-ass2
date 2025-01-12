@@ -13,11 +13,6 @@ import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 const Header = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const handleExploreClick = () => {
-        window.location.href = "/TouristSpot"; // Replace with the actual URL
-      };
-
     
     const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -147,7 +142,9 @@ const Header = () => {
             </section>
             <div className="TSMainInfo">
                     <h1>Explore the Penang with Us!</h1>
-                    <button onClick={handleExploreClick}>Explore Now!</button>
+                    <Link to="/TouristSpot">
+                        <button>Explore Now!</button>
+                    </Link>
                 </div>
             </div>
 
