@@ -213,7 +213,7 @@ body {
     text-align: center;
   }
   .food-image-container {
-    width: 100%;
+    width: 55%;
     height: auto;
   }
 }
@@ -224,6 +224,13 @@ body {
   object-fit: cover; /* Crop to fit the dimensions */
   border-radius: 15px; /* Rounded corners for the image */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+@media (max-width: 768px) {
+  .food-image {
+    border-radius: 15px 15px 0 0; /* Rounded corners for the top */
+    width: 30vh;
+  }
 }
 
 .food-text {
