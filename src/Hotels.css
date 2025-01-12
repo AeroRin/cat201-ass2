@@ -110,7 +110,7 @@
     text-decoration: none;
     font-weight: bold;
     font-family: "Ysabeau SC";
-    font-size: 25px;
+    font-size: 20px;
     transition: color 0.3s;
     box-sizing: border-box; /* Include padding in the width calculation */
 }
@@ -264,7 +264,7 @@
     .hotels-nav {
         display: none; /* Hide menu by default */
         position: fixed; /* Absolute position to avoid shifting */
-        top: 25px;
+        top: 23px;
         left: 28%;
         width: 50%;
         background-color: #49cd42;
@@ -277,7 +277,7 @@
     .hotels-nav a {
         color: white;
         text-decoration: none;
-        font-size: 28px;
+        font-size: 20px;
         transition: color 0.3s;
     }
 
