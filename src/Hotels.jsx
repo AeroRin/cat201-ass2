@@ -151,10 +151,10 @@ const Hotels = () => {
         <div className="hotels-container">
             <nav className={`hotels-nav ${isHotelMenuOpen ? 'open' : ''}`}>
                 <ul>
-                    <li><Link to="#introduction">Introduction</Link></li>
+                    <li><a href="#introduction">Introduction</a></li>
                 {hotels.map(hotel => (
                     <li key={hotel.id}>
-                        <Link to={`#${hotel.id}`}>{hotel.name}</Link>
+                        <a href={`#${hotel.id}`}>{hotel.name}</a>
                     </li>
                 ))}
                 </ul>
