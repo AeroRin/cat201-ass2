@@ -17,7 +17,7 @@
     box-sizing: border-box;
 }
 
-.overlay-boxA{
+.about .overlay-boxA{
     position: relative;
     background: rgba(0, 0, 0, 0.4);
     height: 100.3%;
@@ -29,7 +29,7 @@
     align-items: center;
     object-fit: contain;
     box-sizing: border-box;
-    top: 3.9vh;
+    top: 11.5vh;
 }
 
  @media (max-width: 1920px){
