@@ -23,15 +23,6 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
     };
 
-    const foodNavigationButton = () => {
-        window.location.href = "/Food"; // Replace with the actual URL
-    };
-
-    const hotelNavigationButton = () => {
-        window.location.href = "/hotels"; // Replace with the actual URL
-    };
-
-
     return (
         <>
         <header className="header">
@@ -118,7 +109,9 @@ const Header = () => {
 
     <div className="FoodMainInfo">
       <h1>Explore Penang with Us!</h1>
-      <button className="foodNavigateButton" onClick={foodNavigationButton}>Explore Local Taste</button>
+      <Link to="/Food">
+        <button className="foodNavigateButton">Explore Local Taste</button>
+      </Link>
     </div>
   </section>
 </div>
@@ -166,7 +159,9 @@ const Header = () => {
                     Penang, the Pearl of the Orient, combines culture, history, and beauty. Our selected hotels, from beachfront resorts to heritage stays, offer comfort and charm for a memorable stay while you explore the island's attractions.
                     </p>
                     </div>
-                    <button className="hotelNavigateButton" onClick={hotelNavigationButton}>Scout Out Hotels Now!</button>
+                    <Link to="/hotels">
+                        <button className="hotelNavigateButton">Scout Out Hotels Now!</button>
+                    </Link>
                 </section>
             </div>
         </>
