@@ -20,7 +20,7 @@
 .overlay-boxA{
     position: relative;
     background: rgba(0, 0, 0, 0.4);
-    height: 90.3%;
+    height: 100.3%;
     width: 100%;
     padding: 2rem;
     display: flex;
@@ -29,20 +29,14 @@
     align-items: center;
     object-fit: contain;
     box-sizing: border-box;
-    top: 10vh;
+    top: 3.9vh;
 }
 
-@media (max-width: 2560px){
-  .overlay-boxA {
-    top: 3.3vh;
-  }
-}
-
-@media (max-width: 1920px){
+ @media (max-width: 1920px){
   .overlay-boxA {
     top: 6.85vh;
   }
-}
+} 
 
 .Alogo{
   display: flex;
@@ -91,7 +85,7 @@
     left: 0;
     height: 110vh;
     width: 100%;
-    margin-top: -1vh;
+    margin-top: -7.8vh;
   }
 }
 
@@ -99,7 +93,7 @@
   .about .overlay-boxA {
     height: 110vh;
     width: 100%;
-    margin-top: -1vh;
+    margin-top: -7.6vh;
   }
 }
 
@@ -153,6 +147,12 @@
 @media (max-width: 768px){
   .A_TitleName h1, .A_TitleName h2 {
     font-size: clamp(5rem, 10vw, 12rem);
+  }
+}
+
+@media (max-width: 701px){
+  .A_TitleName h1, .A_TitleName h2 {
+    font-size: clamp(2rem, 5vw, 10rem);
   }
 }
 
@@ -521,7 +521,19 @@
     }
   }
 
-  @media (max-width: 1024px) {      
+  @media (max-width: 1024px) { 
+    .content1-about .card-info h1{
+      user-select: none;
+      font-family: "Bebas Neue", serif;
+      font-size: clamp(2rem, 4vw, 5rem);
+      font-weight: 400;
+      color: white;
+      margin: 0;
+      text-align: center;
+      width: 100%;
+      margin-left: -1rem;
+    }
+
     .content1-about p{
       user-select: none;
       font-family: "Ysabeau SC", serif;
@@ -530,6 +542,32 @@
       color: white;
       padding: 0rem;
       margin-left: -1vw;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content1-about p{
+      user-select: none;
+      font-family: "Ysabeau SC", serif;
+      font-size: clamp(0.7rem, 1vw, 0.9rem);
+      font-weight: 400;
+      color: white;
+      padding: 0rem;
+      margin-left: -1vw;
+    }
+  }
+  
+  @media (max-width: 426px) {
+    .content1-about .card-info h1{
+      user-select: none;
+      font-family: "Bebas Neue", serif;
+      font-size: clamp(1rem, 7vw, 2rem);
+      font-weight: 400;
+      color: white;
+      margin: 0;
+      text-align: center;
+      width: 100%;
+      margin-left: -1rem;
     }
   }
 

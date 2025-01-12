@@ -273,6 +273,33 @@
     left: 26vw;
   }
 }
+
+@media (max-width: 645px){
+  .H_TitleName h1{
+    font-size: clamp(0.25rem, 7vw, 10rem);
+    top: -17vh;
+    left: 45vw;
+  }
+  .H_TitleName h2{
+    font-size: clamp(0.25rem, 6vw, 9rem);
+    top: -20vh;
+    left: 17vw;
+  }
+}
+
+@media (max-width: 400px){
+  .H_TitleName h1{
+    font-size: clamp(0.25rem, 7vw, 10rem);
+    top: -17vh;
+    left: 45vw;
+  }
+  .H_TitleName h2{
+    font-size: clamp(0.25rem, 6vw, 9rem);
+    top: -18vh;
+    left: 17vw;
+  }
+}
+
 .content1_Wrapper{
   display: flex;
   flex-direction: column;  
@@ -396,6 +423,58 @@
   }
 }
 
+@media (max-width: 1145px){
+  .C_TitleName h1{
+    font-size: clamp(5rem, 8vw, 10rem);
+    top: 20vh;
+    left: 38.5vw;
+  }
+  .C_TitleName h2{
+    font-size: clamp(5rem, 8vw, 12rem);
+    top: 10vh;
+    left: 35.5vw;
+  }
+  .line{
+    width: 90%;
+    height: clamp(0.25rem, 0.5vw, 2rem); 
+    border-radius: 5vh;
+    background-color: white;
+    left: 4.5vw;
+    top: 3vh;
+  }
+  .C_TitleContent p{
+    font-size: clamp(1rem, 2vw, 2.3rem);
+    top: 3vh;
+    left: 17vw;
+  }
+}
+
+@media (max-width: 1024px){
+  .C_TitleName h1{
+    font-size: clamp(5rem, 8vw, 10rem);
+    top: 20vh;
+    left: 38.5vw;
+  }
+  .C_TitleName h2{
+    font-size: clamp(5rem, 8vw, 12rem);
+    top: 11vh;
+    left: 35.5vw;
+  }
+  .line{
+    width: 90%;
+    height: clamp(0.25rem, 0.5vw, 2rem); 
+    border-radius: 5vh;
+    background-color: white;
+    left: 4.5vw;
+    top: 4vh;
+  }
+  .C_TitleContent p{
+    font-size: clamp(1rem, 2vw, 2.3rem);
+    top: 4vh;
+    left: 17vw;
+  }
+}
+
 @media (max-width: 900px){
   .C_TitleName h1{
     font-size: clamp(3rem, 8vw, 10rem);
@@ -422,8 +501,7 @@
   }
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 841px) {
   .C_TitleName h1{
     font-size: clamp(3rem, 8vw, 10rem);
     top: 20vh;
@@ -438,6 +516,31 @@
     width: 90%;
     height: clamp(0.25rem, 0.5vw, 2rem); 
     border-radius: 5vh;
+    left: 6.5vw;
+    top: 7vh;
+  }
+  .C_TitleContent p{
+    font-size: clamp(0.5rem, 2vw, 2.3rem);
+    top: 7vh;
+    left: 17vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .C_TitleName h1{
+    font-size: clamp(3rem, 8vw, 10rem);
+    top: 16vh;
+    left: 38.5vw;
+  }
+  .C_TitleName h2{
+    font-size: clamp(3rem, 8vw, 12rem);
+    top: 11vh;
+    left: 35.5vw;
+  }
+  .line{
+    width: 90%;
+    height: clamp(0.25rem, 0.5vw, 2rem); 
+    border-radius: 5vh;
     background-color: white;
     left: 6.5vw;
     top: 7vh;
@@ -446,6 +549,32 @@
     font-size: clamp(0.5rem, 2vw, 2.3rem);
     top: 7vh;
     left: 17vw;
+  }
+}
+
+@media (max-width: 459px) {
+  .C_TitleName h1{
+    font-size: clamp(3rem, 8vw, 10rem);
+    top: 16vh;
+    left: 36vw;
+  }
+  .C_TitleName h2{
+    font-size: clamp(3rem, 8vw, 12rem);
+    top: 11vh;
+    left: 32vw;
+  }
+  .line{
+    width: 90%;
+    height: clamp(0.25rem, 0.5vw, 2rem); 
+    border-radius: 5vh;
+    background-color: white;
+    left: 6.5vw;
+    top: 7vh;
+  }
+  .C_TitleContent p{
+    font-size: clamp(0.5rem, 3vw, 2.3rem);
+    top: 7vh;
+    left: 1vw;
   }
 }
 
