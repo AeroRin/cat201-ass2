@@ -131,11 +131,11 @@ const Hotels = () => {
             </div>
             <nav className={`main-nav ${isMenuOpen ? 'open' : ''}`}>
                 <ul>
-                    <li><Link to="/header">MAIN</Link></li>
-                    <li><Link to="/about">ABOUT</Link></li>
-                    <li><Link to="/TouristSpot">TOURIST SPOTS</Link></li>
-                    <li><Link to="/Food">LOCAL TASTE</Link></li>
-                    <li><Link to="/hotels">HOTELS</Link></li>
+                    <li><a href="/header">MAIN</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/TouristSpot">TOURIST SPOTS</a></li>
+                    <li><a href="/Food">LOCAL TASTE</a></li>
+                    <li><a href="/hotels">HOTELS</a></li>
                 </ul>
             </nav>
             <button className="hotelmain-hamburger" onClick={toggleMenu}>
@@ -150,10 +150,10 @@ const Hotels = () => {
         <div className="hotels-container">
             <nav className={`hotels-nav ${isHotelMenuOpen ? 'open' : ''}`}>
                 <ul>
-                    <li><Link to="#introduction">Introduction</Link></li>
+                    <li><a href="#introduction">Introduction</a></li>
                 {hotels.map(hotel => (
                     <li key={hotel.id}>
-                        <Link to={`#${hotel.id}`}>{hotel.name}</Link>
+                        <a href={`#${hotel.id}`}>{hotel.name}</a>
                     </li>
                 ))}
                 </ul>
