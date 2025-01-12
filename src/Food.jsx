@@ -11,6 +11,7 @@ import asamLaksa from "./assets/laksa.jpg";
 import oysterOmelette from "./assets/oysterOmelette.png";
 import wanTanMee from "./assets/wantanmee.png";
 import cendol from "./assets/cendol.jpg";
+import { Link } from 'react-router-dom';
 
 const Food = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -151,7 +152,13 @@ const Food = () => {
 
     cardRefs.current.forEach((card) => observer.observe(card));
     return () => {
-      cardRefs.current.forEach((card) => observer.unobserve(card));
+      return () => {
+        cardRefs.current.forEach((card) => {
+          if (card instanceof Element) {
+            observer.unobserve(card);
+          }
+        });
+      };      
     };
   }, []);
 
@@ -164,11 +171,11 @@ const Food = () => {
         </div>
         <nav className={`main-nav ${isMenuOpen ? 'open' : ''}`}>
           <ul>
-            <li><a href="/header">MAIN</a></li>
-            <li><a href="/about">ABOUT</a></li>
-            <li><a href="/TouristSpot">TOURIST SPOTS</a></li>
-            <li><a href="/Food">LOCAL TASTE</a></li>
-            <li><a href="/hotels">HOTELS</a></li>
+            <li><Link to="/header">MAIN</Link></li>
+            <li><Link to="/about">ABOUT</Link></li>
+            <li><Link to="/TouristSpot">TOURIST SPOTS</Link></li>
+            <li><Link to="/Food">LOCAL TASTE</Link></li>
+            <li><Link to="/hotels">HOTELS</Link></li>
           </ul>
         </nav>
         <button className="Fhamburger" onClick={toggleMenu}>

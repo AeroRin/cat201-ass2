@@ -29,6 +29,7 @@ import RS1 from './assets/HotelAssets/RS1.jpg';
 import RS2 from './assets/HotelAssets/RS2.jpg';
 import RS3 from './assets/HotelAssets/RS3.jpg';
 import RS4 from './assets/HotelAssets/RS4.jpg';
+import { Link } from 'react-router-dom';
 
 const hotels = [
     {
@@ -131,11 +132,11 @@ const Hotels = () => {
             </div>
             <nav className={`main-nav ${isMenuOpen ? 'open' : ''}`}>
                 <ul>
-                    <li><a href="/header">MAIN</a></li>
-                    <li><a href="/about">ABOUT</a></li>
-                    <li><a href="/TouristSpot">TOURIST SPOTS</a></li>
-                    <li><a href="/Food">LOCAL TASTE</a></li>
-                    <li><a href="/hotels">HOTELS</a></li>
+                    <li><Link to="/header">MAIN</Link></li>
+                    <li><Link to="/about">ABOUT</Link></li>
+                    <li><Link to="/TouristSpot">TOURIST SPOTS</Link></li>
+                    <li><Link to="/Food">LOCAL TASTE</Link></li>
+                    <li><Link to="/hotels">HOTELS</Link></li>
                 </ul>
             </nav>
             <button className="hotelmain-hamburger" onClick={toggleMenu}>
@@ -150,10 +151,10 @@ const Hotels = () => {
         <div className="hotels-container">
             <nav className={`hotels-nav ${isHotelMenuOpen ? 'open' : ''}`}>
                 <ul>
-                    <li><a href="#introduction">Introduction</a></li>
+                    <li><Link to="#introduction">Introduction</Link></li>
                 {hotels.map(hotel => (
                     <li key={hotel.id}>
-                        <a href={`#${hotel.id}`}>{hotel.name}</a>
+                        <Link to={`#${hotel.id}`}>{hotel.name}</Link>
                     </li>
                 ))}
                 </ul>
