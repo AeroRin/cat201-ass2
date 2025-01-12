@@ -582,7 +582,7 @@ figure.snip0016:hover figcaption::before {
 }
 
 .TSMainBackground {
-  min-height: 100vh;
+  min-height: 150vh;
   display: flex;
   flex-direction: column; /* Default column layout for smaller screens */
   align-items: center;
@@ -765,7 +765,7 @@ figure.snip0016:hover figcaption::before {
 
   @media screen and (max-width: 768px) {
     .TSMaincontainer > div {
-      flex: 0 0 90px; /* Reduce the width of the container */
+      flex: 0 0 60px; /* Reduce the width of the container */
     }
   
     .TSMaincontainer > div:hover {
