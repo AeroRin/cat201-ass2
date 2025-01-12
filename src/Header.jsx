@@ -42,11 +42,11 @@ const Header = () => {
             </div>
             <nav className={`main-nav ${isMenuOpen ? 'open' : ''}`}>
                 <ul>
-                    <li><a href="/header">MAIN</a></li>
+                    <li><Link to="/header">MAIN</Link></li>
                     <li><Link to="/about">ABOUT</Link></li>
-                    <li><a href="/TouristSpot">TOURIST SPOTS</a></li>
-                    <li><a href="/Food">LOCAL TASTE</a></li>
-                    <li><a href="/hotels">HOTELS</a></li>
+                    <li><Link to="/TouristSpot">TOURIST SPOTS</Link></li>
+                    <li><Link to="/Food">LOCAL TASTE</Link></li>
+                    <li><Link to="/hotels">HOTELS</Link></li>
                 </ul>
             </nav>
             <button className="Fhamburger" onClick={toggleMenu}>
@@ -78,7 +78,7 @@ const Header = () => {
                                 <figcaption>
                                     <h2>Do you know <span>History</span> of Penang</h2>
                                     <p>Penang was once a strategic trading hub and a melting pot of diverse ethnicities and is founded by Francis Light</p>
-                                    <a href="/about"></a>
+                                    <Link to="/about"></Link>
                                 </figcaption>
                             </figure>
                         </article>
@@ -88,7 +88,7 @@ const Header = () => {
                                 <figcaption>
                                     <h2>Worry about your <span>Traveling Plans</span></h2>
                                     <p>Make sure you gather all your travel requirements to ensure a smooth and enjoyable journey. </p>
-                                    <a href="/about"></a>
+                                    <Link to="/about"></Link>
                                 </figcaption>
                             </figure>
                         </article>
@@ -98,7 +98,7 @@ const Header = () => {
                                 <figcaption>
                                     <h2>Learn more about the<span> Weather</span> of Penang </h2>
                                     <p>Penang has a tropical climate, with warm temperatures and high humidity throughout the year.</p>
-                                    <a href="/about"></a>
+                                    <Link to="/about"></Link>
                                 </figcaption>
                             </figure>
                         </article>
@@ -106,45 +106,6 @@ const Header = () => {
                 </div>
             </div>
         </section>
-
-        {/* <section className="content2-section">
-        <div className="container">
-                    <input type="radio" name="slider" id="item-1" defaultChecked></input>
-                    <input type="radio" name="slider" id="item-2"></input>
-                    <input type="radio" name="slider" id="item-3"></input>
-                <div className="cards">
-                    <label className="card" htmlFor="item-1" id="image-1">
-                        <img src={food1} alt="Penang" />
-                    </label>
-                    <label className="card" htmlFor="item-2" id="image-2">
-                        <img src={food2} alt="Penang" />
-                    </label>
-                    <label className="card" htmlFor="item-3" id="image-3">
-                        <img src={food3} alt="Penang" />
-                    </label>
-                </div>
-                <div className="player">
-                    <div className="upper-part">
-                        <div className="play-icon">
-                                <defs/>
-                                <path d="M5 3l14 9-14 9V3z"/>
-                        </div>
-                        <div className="info-area" id="test">
-                            <label className="image-info" id="image-info-1">
-                                <div className="title">Image 1</div>
-                            </label>
-                            <label className="image-info" id="image-info-2">
-                                <div className="title">Image 2</div>
-                            </label>
-                            <label className="image-info" id="image-info-3">
-                                <div className="title">Image 3</div>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> */}
-
 
 <div className="FoodMainBackground">
   <section className="FoodMainContainer">
