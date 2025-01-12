@@ -1,0 +1,1257 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,200,300,800');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header{
+    background: url('./assets/HP_header.jpg') center center/cover no-repeat;
+    height: clamp(60rem, 70vw, 90rem);
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    object-fit: contain;
+    box-sizing: border-box; /* Include padding/borders in the width */
+}
+
+.logo{
+    position: absolute;
+    top: -6.5%;
+    left: -2.2%;
+    display: flex;
+}
+
+.logo img{
+    height: 8.75rem;
+    width: auto;
+}
+
+.logo span{
+    font-size: 0.8rem;
+    font-weight: lighter;
+    left: 10px;
+}
+
+/* @media (max-width: 1920px){
+  .logo{
+    position: absolute;
+    top: -4%;
+  }
+  .logo img{
+    height: 7rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 1440px){
+  .logo{
+    position: absolute;
+    top: -4%;
+  }
+}
+
+@media (max-width: 1024px){
+  .logo{
+    position: absolute;
+    top: -4%;
+    left: -1.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo{
+    position: absolute;
+    top: -4%;
+  }
+} */
+
+.overlay-box {
+    user-select: none;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    padding: 40px;
+    width: 100%;
+    background-color: rgba(94, 91, 91, 0.799);  /* White box with transparency */
+    border-radius: 0;  /* No need for round corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    box-sizing: border-box; /* Include padding/borders in the width */
+}
+
+.overlay-box p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* nav {
+  user-select: none;
+  position: absolute;
+  top: 23px;
+  left:18%;
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+}
+
+nav ul {
+  display: flex;
+  gap: 14px;
+  list-style: none;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav ul li {
+  margin: 0 40px;
+}
+
+nav ul li a {
+  font-family: 'Ysabeau SC';
+  color: white;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  display: inline-block;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+} 
+
+nav ul li a {
+  font-family: 'Ysabeau SC';
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+nav ul li a:hover {
+  color: rgba(94, 91, 91, 0.799); 
+  box-shadow: inset 200px 0 0 0 white; 
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+} */
+
+
+@media (max-width: 1920px){
+  nav{
+    margin-left: 14vw;
+  }
+}
+
+@media (max-width: 1715px){
+  nav{
+    margin-left: 5vw;
+  }
+}
+
+@media (max-width: 1440px){
+  nav{
+    margin-left: 1vw;
+  }
+}
+
+@media (max-width: 1279px){
+  nav{
+    margin-left: -4vw;
+  }
+} */
+
+/* Hamburger Button Styles */
+.Mhamburger {
+  display: none; /* Hidden on larger screens */
+  position: absolute;
+  top: 4px; /* Align with the top of the screen or overlay box */
+  right: 25px; /* Adjust spacing from the right edge */
+  height: 9%; /* Match the height of the overlay box */
+  flex-direction: column;
+  justify-content: center; /* Center bars vertically */
+  gap: 7px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 100; /* Ensure it appears on top of the overlay box */
+  padding: 15px;
+}
+
+.Mhamburger .bar {
+  width:35px;
+  height: 7px;
+  background-color: rgba(255, 255, 255, 0.799);
+  border-radius: 2px;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+/* @media (max-width: 1161px){
+  .hamburger{
+    display: flex;
+  }
+  nav{
+    display: none !important;
+  }
+} */
+
+.main-nav {
+  user-select: none;
+  position: absolute;
+  top: 23px;
+  left:18%;
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+}
+.main-nav ul {
+  display: flex;
+  gap: 14px;
+  list-style: none;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-around; /* Spread items evenly */
+  padding: 0px;
+  margin: 0px;
+}
+.main-nav ul li {
+  margin: 0 40px;
+}
+.main-nav ul li a {
+  font-family: 'Ysabeau SC';
+  color: white;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  display: inline-block; /* Ensure the hover effect spans the entire text */
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.main-nav ul li a {
+  font-family: 'Ysabeau SC';
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.main-nav ul li a:hover {
+  color: rgba(94, 91, 91, 0.799); /* Color on hover */
+  box-shadow: inset 200px 0 0 0 white; /* Animation effect */
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+}
+@media (max-width: 1350px) {
+  .main-nav {
+    left: 180px; /* Adjust 'left' to move the nav to the left */
+  }
+  .main-nav ul li {
+      margin: 0 35px; /* Reduce the spacing between list items */
+  }
+}
+@media (max-width: 1200px) {
+  .main-nav {
+      left: 155px; /* Adjust 'left' to move the nav to the left */
+  }
+  .main-nav ul li {
+      margin: 0 25px; /* Reduce the spacing between list items */
+  }
+}
+@media (max-width: 1060px) {
+  .main-nav {
+      left: 130px; /* Adjust 'left' to move the nav to the left */
+  }
+  .main-nav ul li {
+      margin: 0 18px; /* Reduce the spacing between list items */
+  }
+}
+@media (max-width: 950px) {
+  .main-nav {
+      left: 95px; /* Adjust 'left' to move the nav to the left */
+  }
+  .main-nav ul li {
+      margin: 0 12px; /* Reduce the spacing between list items */
+  }
+}
+@media (max-width: 840px) {
+  .main-nav {
+      display: none; /* Hide menu by default */
+      position: absolute; /* Absolute position to avoid shifting */
+      top: 12vh;
+      width: 50%;
+      background-color: #625959;
+      flex-direction: column;
+      gap: 25px;
+      padding: 20px;
+      border-radius: 15px;
+  }
+  .main-nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 33px;
+      transition: color 0.3s;
+  }
+  .main-nav a:hover {
+      background-color: var(--hotels-highlight); /* Highlight background */
+      color: #49cd42; /* Maintain text color during hover */
+  }
+  .main-nav.open {
+      display: flex; /* Show menu when open */
+      z-index: 100; /* Ensure it appears on top of the overlay box */
+  }
+  .Mhamburger {
+    display: flex; /* Show hamburger on smaller screens */
+  }
+}
+
+ .H_TitleName h1{
+    user-select: none;
+    font-family: "Merriweather", serif;
+    font-size: clamp(2rem, 7vw, 9rem);
+    font-weight: 400;
+    color: white;
+    position: relative;
+    top: -10vh;
+    left: 48vw;
+}
+
+.H_TitleName h2{
+    user-select: none;
+    font-family: 'Portului';
+    font-size: clamp(2rem, 5vw, 7rem);
+    font-weight: 400;
+    color: white;
+    position: relative;
+    top: -19vh;
+    left: 31vw;
+}
+
+@media (max-width: 1145px){
+  .H_TitleName h1{
+    font-size: clamp(3rem, 7vw, 10rem);
+    top: -13vh;
+    left: 54vw;
+  }
+  .H_TitleName h2{
+    font-size: clamp(2rem, 6vw, 9rem);
+    top: -20vh;
+    left: 26vw;
+  }
+}
+
+@media (max-width: 781px){
+  .H_TitleName h1{
+    font-size: clamp(3rem, 7vw, 10rem);
+    top: -18vh;
+    left: 54vw;
+  }
+  .H_TitleName h2{
+    font-size: clamp(2rem, 6vw, 9rem);
+    top: -23vh;
+    left: 26vw;
+  }
+}
+
+@media (max-width: 681px){
+  .H_TitleName h1{
+    font-size: clamp(1rem, 7vw, 10rem);
+    top: -18vh;
+    left: 54vw;
+  }
+  .H_TitleName h2{
+    font-size: clamp(1rem, 6vw, 9rem);
+    top: -23vh;
+    left: 26vw;
+  }
+}
+.content1_Wrapper{
+  display: flex;
+  flex-direction: column;  
+  align-items: center;  
+  gap: 20vw;
+}
+
+.box-section{
+    margin-top: -35vh;
+    width: 152%;
+    height: 200vh;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0,0.3) 2%, rgba(0, 0, 0,0.4) 4%, rgba(0, 0, 0,0.5) 7%,  rgba(0, 0, 0,0.6) 9%, rgba(0, 0, 0,0.7) 12%, rgba(0, 0, 0,0.8) 15%, rgba(0, 0, 0,1) 16% , rgba(0, 0, 0, 1) 100%);
+}
+
+@media (max-width: 2560px){
+  .box-section{
+    margin-top: -35vh;
+    width: 100vw;
+    height: 200vh;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0,0.3) 2%, rgba(0, 0, 0,0.4) 4%, rgba(0, 0, 0,0.5) 7%,  rgba(0, 0, 0,0.6) 9%, rgba(0, 0, 0,0.7) 12%, rgba(0, 0, 0,0.8) 15%, rgba(0, 0, 0,1) 16% , rgba(0, 0, 0, 1) 100%);
+  }
+}
+
+@media (max-width: 1920px){
+  .box-section{
+    margin-top: -35vh;
+    width: 100vw;
+    height: 200vh;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0,0.3) 2%, rgba(0, 0, 0,0.4) 4%, rgba(0, 0, 0,0.5) 7%,  rgba(0, 0, 0,0.6) 9%, rgba(0, 0, 0,0.7) 12%, rgba(0, 0, 0,0.8) 15%, rgba(0, 0, 0,1) 16% , rgba(0, 0, 0, 1) 100%);
+  }
+}
+
+.C_TitleName h1{
+    user-select: none;
+    font-family: "Roboto Condensed", serif;
+    font-size: clamp(5rem, 8vw, 12rem);
+    font-weight: 400;
+    color: white;
+    position: relative;
+    top: 20vh;
+    left: 38.5vw;
+  }
+
+.C_TitleName h2{
+    user-select: none;
+    font-family: "Roboto Condensed", serif;
+    font-size: clamp(5rem, 8vw, 12rem);
+    font-weight: 400;
+    color: white;
+    position: relative;
+    top: 7vh;
+    left: 35.5vw;
+}
+
+.line{
+    position: relative;
+    width: 90%;
+    height: clamp(0.25rem, 0.5vw, 2rem); 
+    border-radius: 5vh;
+    background-color: white;
+    left: 4.5vw;
+}
+
+.C_TitleContent p{
+    user-select: none;
+    font-size: clamp(1rem, 2vw, 4rem);
+    color: white;
+    position: relative;
+    top: 0vh;
+    left: 17vw;
+}
+
+@media (max-width: 1920px){
+  .C_TitleName h1{
+    font-size: clamp(5rem, 8vw, 12rem);
+    top: 20vh;
+    left: 38.5vw;
+  }
+  .C_TitleName h2{
+    font-size: clamp(5rem, 8vw, 12rem);
+    top: 7vh;
+    left: 35.5vw;
+  }
+  .line{
+    width: 90%;
+    height: clamp(0.25rem, 0.5vw, 2rem); 
+    border-radius: 5vh;
+    background-color: white;
+    left: 4.5vw;
+  }
+  .C_TitleContent p{
+    font-size: clamp(1rem, 2vw, 2.3rem);
+    top: 0vh;
+    left: 17vw;
+  }
+}
+
+@media (max-width: 1220px){
+  .C_TitleName h1{
+    font-size: clamp(5rem, 8vw, 10rem);
+    top: 20vh;
+    left: 38.5vw;
+  }
+  .C_TitleName h2{
+    font-size: clamp(5rem, 8vw, 12rem);
+    top: 9vh;
+    left: 35.5vw;
+  }
+  .line{
+    width: 90%;
+    height: clamp(0.25rem, 0.5vw, 2rem); 
+    border-radius: 5vh;
+    background-color: white;
+    left: 4.5vw;
+    top: 2vh;
+  }
+  .C_TitleContent p{
+    font-size: clamp(1rem, 2vw, 2.3rem);
+    top: 2vh;
+    left: 17vw;
+  }
+}
+
+@media (max-width: 900px){
+  .C_TitleName h1{
+    font-size: clamp(3rem, 8vw, 10rem);
+    top: 20vh;
+    left: 38.5vw;
+  }
+  .C_TitleName h2{
+    font-size: clamp(3rem, 8vw, 12rem);
+    top: 12vh;
+    left: 35.5vw;
+  }
+  .line{
+    width: 90%;
+    height: clamp(0.25rem, 0.5vw, 2rem); 
+    border-radius: 5vh;
+    background-color: white;
+    left: 6.5vw;
+    top: 5vh;
+  }
+  .C_TitleContent p{
+    font-size: clamp(1rem, 2vw, 2.3rem);
+    top: 5vh;
+    left: 17vw;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .C_TitleName h1{
+    font-size: clamp(3rem, 8vw, 10rem);
+    top: 20vh;
+    left: 38.5vw;
+  }
+  .C_TitleName h2{
+    font-size: clamp(3rem, 8vw, 12rem);
+    top: 13vh;
+    left: 35.5vw;
+  }
+  .line{
+    width: 90%;
+    height: clamp(0.25rem, 0.5vw, 2rem); 
+    border-radius: 5vh;
+    background-color: white;
+    left: 6.5vw;
+    top: 7vh;
+  }
+  .C_TitleContent p{
+    font-size: clamp(0.5rem, 2vw, 2.3rem);
+    top: 7vh;
+    left: 17vw;
+  }
+}
+
+.About_Content {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
+}
+
+figure.snip0016 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  top: 5vh;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 800px;
+  width: 100%;
+  background: #000000;
+  text-align: left;
+  border-radius: 10px;
+}
+
+figure.snip0016 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+figure.snip0016 img {
+  width: 100%;
+  object-fit: contain;
+  max-height: 400px;
+  max-width: 100%;
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+figure.snip0016 figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px 3em;
+  width: 100%;
+  height: 100%;
+}
+
+figure.snip0016 figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 100%;
+  border-left: 4px solid rgba(255, 255, 255, 0.8);
+  content: '';
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+figure.snip0016 h2,
+figure.snip0016 p {
+  margin: 0 0 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+
+figure.snip0016 h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(30%, 0%, 0);
+  transform: translate3d(30%, 0%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+figure.snip0016 h2 span {
+  font-weight: 800;
+}
+
+figure.snip0016 p {
+  font-weight: 200;
+  -webkit-transform: translate3d(0%, 30%, 0);
+  transform: translate3d(0%, 30%, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+figure.snip0016 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+
+figure.snip0016:hover img {
+  opacity: 0.3;
+}
+
+figure.snip0016:hover figcaption h2 {
+  opacity: 1;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+figure.snip0016:hover figcaption p {
+  opacity: 0.9;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+figure.snip0016:hover figcaption::before {
+  background: rgba(255, 255, 255, 0);
+  left: 30px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+/* input[type=radio] {
+  display: none;
+}
+
+.card {
+  position: relative;
+  width: 13vw;
+  height: 40vh;
+  top: 12vh;
+  left: 23.5vw;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+ .container {
+  position: relative;
+  top: -30vh;
+  left: -29vw;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+label{
+  position: relative;
+  top: -35vh;
+  left: 30vw;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  transition: transform .4s ease;
+}
+
+.cards {
+  position: relative;
+  width: 30vw;
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 20vw;
+  height: 30vh;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform .4s ease, opacity .4s ease;
+}
+
+#item-1:checked ~ .cards #image-3, #item-2:checked ~ .cards #image-1, #item-3:checked ~ .cards #image-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #image-2, #item-2:checked ~ .cards #image-3, #item-3:checked ~ .cards #image-1 {
+  transform: translatex(27%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #image-1, #item-2:checked ~ .cards #image-2, #item-3:checked ~ .cards #image-3 {
+  transform: translatex(0%) scale(1.2);
+  opacity: 1;
+  z-index: 1;
+  
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+} 
+
+.player {
+  position: relative;
+  top: 450px;
+  left: 277px;
+  background-color: #fff;
+  border-radius: 8px;
+  min-width: 200px;
+  padding: 3px 10px;
+}
+
+.upper-part {
+  position: relative;
+  top: 7px;
+  left: 31px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  height: 36px;
+  overflow: hidden;
+}
+
+.image-info .title {
+  font-family: 'Ysabeau SC', serif;
+  color: #403d40;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.info-area {
+  width: 100%;
+  position: absolute;
+  top: 7px;
+  left: 41px;
+  transition: transform .4s ease-in;
+}
+
+#item-1:checked ~ .player #test {
+  transform: translateY(10);
+}
+
+#item-2:checked ~ .player #test  {
+  transform: translateY(-26px);
+}
+
+#item-3:checked ~ .player #test  {
+  transform: translateY(-51px);
+}  */
+
+.TSMainBackground {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Default column layout for smaller screens */
+  align-items: center;
+  background: #100721;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  padding: 20px;
+}
+
+.TSMaincontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap items for smaller screens */
+  height: auto;
+  gap: 28px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("./assets/SMMain2.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("./assets/HPMain2.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("./assets/Top3Main2.jpg")
+        no-repeat 30% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("./assets/NMMain2.jpg")
+        no-repeat 50% / cover;
+    }
+
+    .TSMaincontent {
+      font-size: 2.0rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 500px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:hover .TSMaincontent {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+
+.TSMainInfo {
+    flex: 1; /* Ensure it takes up space on the right */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+
+  .TSMainInfo::before {
+    content: ""; /* Create a visual element */
+    position: absolute;
+    left: 0; /* Position it to the left */
+    top: 0;
+    height: 100%; /* Full height of the info section */
+    width: 5px; /* Adjust the thickness of the line */
+    background-color: green; /* Set the color of the line */
+  }
+  .TSMainInfo h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .TSMainInfo button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    background-color: #29c282;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .TSMainInfo button:hover {
+    background-color: #8e61e8;
+  }
+  
+  /* Responsive adjustments for smaller devices */
+  @media screen and (max-width: 1499px) {
+    .TSMainBackground {
+      flex-direction: column;
+    }
+  
+    .TSMaincontainer {
+      flex: none;/* Take up equal space with TSMainInfo */
+      margin-bottom: 20px;
+    }
+  
+    .TSMainInfo {
+      text-align: left;
+      flex:1;
+      display: flex; /* Use flexbox for centering */
+      flex-direction: column; /* Stack content vertically */
+      align-items: center; /* Center content horizontally */
+      justify-content: center; /* Center content vertically */
+      height: auto; /* Optional: Adjust height if needed */
+    }
+
+    .TSMainInfo button {
+        padding: 7px 80px; /* Bigger padding for button */
+        font-size: 1.50rem; /* Larger font size for button text */
+      }
+
+      .TSMainInfo::before {
+        display:none;
+      }
+  }
+
+  /* Layout adjustments for tablets and laptops */
+@media screen and (min-width: 1500px) {
+    .TSMainBackground {
+      flex-direction: row; /* Side-by-side layout for larger screens */
+      align-items: center; /*Center items vertically*/
+    }
+  
+    .TSMaincontainer {
+      flex: 1; /* Take up equal space with TSMainInfo */
+      height: 500px; /* Maintain height */
+    }
+  
+    .TSMainInfo {
+      flex: 1; /* Align on the right */
+      text-align: left; /* Align text to the left for larger screens */
+    }
+
+    .TSMainInfo h1 {
+        font-size: 2.5rem; /* Larger font size for headline */
+        margin-bottom: 30px;
+      }
+    
+      .TSMainInfo button {
+        padding: 15px 100px; /* Bigger padding for button */
+        font-size: 1.25rem; /* Larger font size for button text */
+      }
+  }
+
+  @media screen and (max-width: 768px) {
+    .TSMaincontainer > div {
+      flex: 0 0 90px; /* Reduce the width of the container */
+    }
+  
+    .TSMaincontainer > div:hover {
+      flex: 0 0 150px; /* Adjust the hover effect width for smaller screens */
+    }
+  
+    .TSMaincontent span {
+      margin-top: 200px; /* Reduce the margin to bring it closer */
+      font-size: 0.8rem; /* Reduce the font size for better readability */
+    }
+  
+    .TSMaincontainer > div .TSMaincontent {
+      padding: 10px; /* Adjust padding for smaller screens */
+      font-size: 1rem; /* Adjust font size */
+      transform: translatey(100%);
+    }
+  }
+
+
+  
+
+/* Main background container for the section */
+.FoodMainBackground {
+  background-image: url('./assets/tablefood.png'); /* Replace with your image path */
+  background-size: cover; /* Ensure the background image covers the section */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Parallax effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Main container section */
+.FoodMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px; /* Optional, to limit width */
+  z-index: 2;
+  position: relative;
+}
+
+/* Main content area styling */
+.FoodMainContent {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background for contrast */
+  padding: 15px;
+  margin-bottom:  10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.FoodMainContent h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for text */
+}
+
+.FoodMainContent p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
+  color: #f0f0f0;
+  font-style: italic;
+}
+
+/* Hover effect for content */
+.FoodMainContent:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Explore button container */
+.FoodMainInfo {
+  margin-top: 20px;
+}
+
+.FoodMainInfo h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #f3f3f3;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.foodNavigateButton {
+  font-size: 1.4rem;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #ff7f50, #ff4500); /* Gradient background */
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  letter-spacing: 1px; /* Slight letter spacing for better readability */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  outline: none; /* Remove default focus outline */
+}
+
+.foodNavigateButton::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.foodNavigateButton:hover {
+  background: linear-gradient(45deg, #ff4500, #ff7f50); /* Reverse gradient on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.foodNavigateButton:active {
+  transform: translateY(2px);
+}
+
+.foodNavigateButton:hover::after {
+  width: 0%;
+  height: 0%;
+}
+
+.foodNavigateButton:focus {
+  box-shadow: 0 0 0 4px rgba(255, 127, 80, 0.5); /* Glow effect on focus */
+}
+
+
+/* Main background container for the section */
+.hotelMainBackground {
+  background-image: url('./assets/HotelAssets/HotelsCompilation.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensure the background image covers the section */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Parallax effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Main container section */
+.hotelMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px; /* Optional, to limit width */
+  z-index: 2;
+  position: relative;
+}
+
+/* Main content area styling */
+.hotelMainContent {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background for contrast */
+  padding: 15px;
+  margin-bottom:  10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hotelMainContent h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for text */
+}
+
+.hotelMainContent p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
+  color: #f0f0f0;
+  font-style: italic;
+}
+
+/* Hover effect for content */
+.hotelMainContent:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+.hotelNavigateButton {
+  font-size: 1.4rem;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #5ced3f, #78d32d); /* Gradient background */
+  border: none;
+  left: 18%;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  letter-spacing: 1px; /* Slight letter spacing for better readability */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  outline: none; /* Remove default focus outline */
+}
+
+.hotelNavigateButton::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hotelNavigateButton:hover {
+  background: linear-gradient(45deg, #0e9d49, #42b30a); /* Reverse gradient on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hotelNavigateButton:active {
+  transform: translateY(2px);
+}
+
+.hotelNavigateButton:hover::after {
+  width: 0%;
+  height: 0%;
+}
+
+.hotelNavigateButton:focus {
+  box-shadow: 0 0 0 4px rgba(255, 127, 80, 0.5); /* Glow effect on focus */
+}
