@@ -127,11 +127,12 @@
 
 .A_TitleName h1, .A_TitleName h2 {
   font-family: "Bebas Neue", serif;
-  font-size: clamp(9rem, 16vw, 19rem); /* Responsive font size */
+  font-size: clamp(9rem, 14vw, 19rem); /* Responsive font size */
   font-weight: 400;
   color: white;
   margin: 0;
   text-align: center;
+  margin-top:-5vh;
 }
 
 .A_TitleName {
