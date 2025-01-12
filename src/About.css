@@ -153,7 +153,7 @@
 
 @media (max-width: 701px){
   .A_TitleName h1, .A_TitleName h2 {
-    font-size: clamp(2rem, 5vw, 10rem);
+    font-size: clamp(2rem, 10vw, 11rem);
   }
 }
 
